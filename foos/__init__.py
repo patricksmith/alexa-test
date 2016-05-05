@@ -16,7 +16,6 @@ from pylexa.response import (
 app = Flask(__name__)
 app.register_blueprint(alexa_blueprint)
 app.response_class = AlexaResponseWrapper
-app.debug = True
 
 AWS_VENDOR_ID = os.getenv('AWS_VENDOR_ID')
 SLACK_CLIENT_ID = os.getenv('SLACK_CLIENT_ID')
