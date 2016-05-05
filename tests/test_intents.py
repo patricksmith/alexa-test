@@ -7,6 +7,7 @@ except ImportError:
     import unittest
 
 from foos import app
+app.debug = True
 
 
 class _AlexaTestCase(unittest.TestCase):
